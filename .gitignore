@@ -1,0 +1,37 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+venv/
+env/
+ENV/
+
+# FastAPI 相关
+.pytest_cache
+.coverage
+htmlcov/
+
+# 日志文件
+*.log
+logs/
+
+# 环境变量和敏感信息
+.env
+.env.*
+!.env.example
+
+# IDE 相关
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 操作系统相关
+.DS_Store
+Thumbs.db
