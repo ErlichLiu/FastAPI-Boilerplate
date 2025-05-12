@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
-from fastapi import HTTPException, Security
 from utils.logger import setup_logger
+from fastapi import HTTPException, Security
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 
 # 设置 Logger
