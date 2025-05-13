@@ -34,7 +34,7 @@ def setup_logger(name = None, level = None):
     
     # 创建彩色格式化器
     formatter = colorlog.ColoredFormatter(
-        "%(log_color)s%(asctime)s - %(levelname)s - %(message)s",
+        "%(log_color)s%(asctime)s - [%(name)s] - %(levelname)s - %(message)s",
         datefmt="%Y-%m-%d %H:%M:%S",
         log_colors={
             "DEBUG": "cyan",
@@ -70,7 +70,7 @@ def setup_logger(name = None, level = None):
         
         # 为文件处理器创建格式化器（不带颜色）
         file_formatter = logging.Formatter(
-            "%(asctime)s - %(levelname)s - %(message)s",
+            "%(asctime)s - [%(name)s] - %(levelname)s - %(message)s",
             datefmt="%Y-%m-%d %H:%M:%S"
         )
         file_handler.setFormatter(file_formatter)
